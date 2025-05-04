@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Federación de Tiro - Excelencia y Precisión</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <base href="./" />
     <script>
       tailwind.config = {
         theme: {
@@ -123,7 +125,7 @@
           <!-- Menú mobile -->
           <div
             id="mobile-menu"
-            class="fixed top-0 left-0 h-full w-64 bg-primary transform -translate-x-full transition-transform duration-300 z-40"
+            class="fixed top-0 left-0 w-64 h-screen bg-primary transform -translate-x-full transition-transform duration-300 z-40"
           >
             <div class="p-4 flex justify-between items-center border-b border-white">
               <span class="text-white font-bold text-lg">Menú</span>
@@ -133,28 +135,26 @@
                 </svg>
               </button>
             </div>
-            <nav class="flex flex-col p-4 space-y-4">
-              <a href="/index.html" class="text-white hover:text-secondary text-sm font-medium">Inicio</a>
-              <a href="/pages/noticias.html" class="text-white hover:text-secondary text-sm font-medium">Noticias</a>
-              <a href="/pages/calendario.html" class="text-white hover:text-secondary text-sm font-medium"
-                >Calendario</a
-              >
-              <a href="/pages/records.html" class="text-white hover:text-secondary text-sm font-medium">Récords</a>
-              <a href="/pages/clubes.html" class="text-white hover:text-secondary text-sm font-medium">Clubes</a>
-              <a href="/pages/normas.html" class="text-white hover:text-secondary text-sm font-medium">Normas</a>
-              <a href="/pages/contacto.html" class="text-white hover:text-secondary text-sm font-medium">Contacto</a>
+            <nav class="flex flex-col p-4 space-y-4 bg-primary/95">
+              <a href="index.html" class="text-white hover:text-secondary text-sm font-medium">Inicio</a>
+              <a href="pages/noticias.html" class="text-white hover:text-secondary text-sm font-medium">Noticias</a>
+              <a href="pages/calendario.html" class="text-white hover:text-secondary text-sm font-medium">Calendario</a>
+              <a href="pages/records.html" class="text-white hover:text-secondary text-sm font-medium">Récords</a>
+              <a href="pages/clubes.html" class="text-white hover:text-secondary text-sm font-medium">Clubes</a>
+              <a href="pages/normas.html" class="text-white hover:text-secondary text-sm font-medium">Normas</a>
+              <a href="pages/contacto.html" class="text-white hover:text-secondary text-sm font-medium">Contacto</a>
             </nav>
           </div>
 
           <!-- Menú desktop -->
           <div class="hidden md:flex space-x-4">
-            <a href="/index.html" class="text-white hover:text-secondary text-sm font-medium">Inicio</a>
-            <a href="/pages/calendario.html" class="text-white hover:text-secondary text-sm font-medium">Calendario</a>
-            <a href="/pages/records.html" class="text-white hover:text-secondary text-sm font-medium">Récords</a>
-            <a href="/pages/clubes.html" class="text-white hover:text-secondary text-sm font-medium">Clubes</a>
-            <a href="/pages/normas.html" class="text-white hover:text-secondary text-sm font-medium">Normas</a>
-            <a href="/pages/contacto.html" class="text-white hover:text-secondary text-sm font-medium">Contacto</a>
-            <a href="/pages/noticias.html" class="text-white hover:text-secondary text-sm font-medium">Noticias</a>
+            <a href="index.html" class="text-white hover:text-secondary text-sm font-medium">Inicio</a>
+            <a href="pages/calendario.html" class="text-white hover:text-secondary text-sm font-medium">Calendario</a>
+            <a href="pages/records.html" class="text-white hover:text-secondary text-sm font-medium">Récords</a>
+            <a href="pages/clubes.html" class="text-white hover:text-secondary text-sm font-medium">Clubes</a>
+            <a href="pages/normas.html" class="text-white hover:text-secondary text-sm font-medium">Normas</a>
+            <a href="pages/contacto.html" class="text-white hover:text-secondary text-sm font-medium">Contacto</a>
+            <a href="pages/noticias.html" class="text-white hover:text-secondary text-sm font-medium">Noticias</a>
           </div>
         </div>
       </div>
