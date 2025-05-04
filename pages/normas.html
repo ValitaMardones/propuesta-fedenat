@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Normas y regulaciones de FEDENAT - Federación Nacional de Tiro al Blanco" />
+    <title>Normas - Federación de Tiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1a365d",
+              secondary: "#2b6cb0",
+              accent: "#c53030",
+              dark: "#1a202c",
+              light: "#f7fafc",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-primary/95 backdrop-blur-sm z-50 navbar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center">
+            <img src="assets/logo.png" alt="Logo" class="h-20 w-auto relative" />
+            <span class="ml-2 text-white font-bold text-xl">Federación de Tiro</span>
+          </a>
+
+          <!-- Botón hamburguesa (solo visible en mobile) -->
+          <div class="md:hidden">
+            <button
+              id="menu-button"
+              class="cursor-pointer text-white p-2 focus:outline-none z-50 relative"
+              aria-label="Abrir menú"
+            >
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Menú mobile -->
+          <div
+            id="mobile-menu"
+            class="fixed top-0 left-0 h-full w-64 bg-primary transform -translate-x-full transition-transform duration-300 z-40"
+          >
+            <div class="p-4 flex justify-between items-center border-b border-white">
+              <span class="text-white font-bold text-lg">Menú</span>
+              <button id="close-menu" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <nav class="flex flex-col p-4 space-y-4">
+              <a href="index.html" class="text-white hover:text-secondary text-sm font-medium">Inicio</a>
+              <a href="pages/noticias.html" class="text-white hover:text-secondary text-sm font-medium">Noticias</a>
+              <a href="pages/calendario.html" class="text-white hover:text-secondary text-sm font-medium">Calendario</a>
+              <a href="pages/records.html" class="text-white hover:text-secondary text-sm font-medium">Récords</a>
+              <a href="pages/clubes.html" class="text-white hover:text-secondary text-sm font-medium">Clubes</a>
+              <a href="pages/normas.html" class="text-white hover:text-secondary text-sm font-medium">Normas</a>
+              <a href="pages/contacto.html" class="text-white hover:text-secondary text-sm font-medium">Contacto</a>
+            </nav>
+          </div>
+
+          <!-- Menú desktop -->
+          <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="text-white hover:text-secondary text-sm font-medium">Inicio</a>
+            <a href="pages/noticias.html" class="text-white hover:text-secondary text-sm font-medium">Noticias</a>
+            <a href="pages/calendario.html" class="text-white hover:text-secondary text-sm font-medium">Calendario</a>
+            <a href="pages/records.html" class="text-white hover:text-secondary text-sm font-medium">Récords</a>
+            <a href="pages/clubes.html" class="text-white hover:text-secondary text-sm font-medium">Clubes</a>
+            <a href="pages/normas.html" class="text-white hover:text-secondary text-sm font-medium">Normas</a>
+            <a href="pages/contacto.html" class="text-white hover:text-secondary text-sm font-medium">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="pt-20">
+      <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 class="text-4xl font-display font-bold text-center mb-12">Normas y Regulaciones</h1>
+
+          <!-- Categorías de Normas -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- Normas de Competición -->
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+              <div class="text-primary mb-4">
+                <i class="fas fa-trophy text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Normas de Competición</h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Reglamento general de competiciones</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Normas de seguridad en eventos</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Protocolos de arbitraje</span>
+                </li>
+              </ul>
+              <a href="#" class="mt-4 inline-block text-secondary hover:text-primary font-medium">Ver más →</a>
+            </div>
+
+            <!-- Normas de Equipamiento -->
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+              <div class="text-primary mb-4">
+                <i class="fas fa-tools text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Normas de Equipamiento</h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Especificaciones de armas permitidas</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Requisitos de equipamiento de seguridad</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Normas de mantenimiento</span>
+                </li>
+              </ul>
+              <a href="#" class="mt-4 inline-block text-secondary hover:text-primary font-medium">Ver más →</a>
+            </div>
+
+            <!-- Normas de Afiliación -->
+            <div class="bg-white rounded-xl p-6 shadow-lg">
+              <div class="text-primary mb-4">
+                <i class="fas fa-users text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4">Normas de Afiliación</h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Requisitos para clubes</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Proceso de afiliación</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                  <span>Obligaciones de miembros</span>
+                </li>
+              </ul>
+              <a href="#" class="mt-4 inline-block text-secondary hover:text-primary font-medium">Ver más →</a>
+            </div>
+          </div>
+
+          <!-- Documentos Importantes -->
+          <div class="bg-white rounded-xl p-8 shadow-lg">
+            <h2 class="text-2xl font-display font-bold mb-6">Documentos Importantes</h2>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-4 bg-light rounded-lg">
+                <div class="flex items-center">
+                  <i class="fas fa-file-pdf text-accent text-2xl mr-4"></i>
+                  <div>
+                    <h3 class="font-bold">Reglamento General 2024</h3>
+                    <p class="text-sm text-gray-500">Última actualización: 15/03/2024</p>
+                  </div>
+                </div>
+                <a href="#" class="text-secondary hover:text-primary font-medium">Descargar</a>
+              </div>
+              <div class="flex items-center justify-between p-4 bg-light rounded-lg">
+                <div class="flex items-center">
+                  <i class="fas fa-file-pdf text-accent text-2xl mr-4"></i>
+                  <div>
+                    <h3 class="font-bold">Manual de Seguridad</h3>
+                    <p class="text-sm text-gray-500">Última actualización: 10/03/2024</p>
+                  </div>
+                </div>
+                <a href="#" class="text-secondary hover:text-primary font-medium">Descargar</a>
+              </div>
+              <div class="flex items-center justify-between p-4 bg-light rounded-lg">
+                <div class="flex items-center">
+                  <i class="fas fa-file-pdf text-accent text-2xl mr-4"></i>
+                  <div>
+                    <h3 class="font-bold">Guía de Afiliación</h3>
+                    <p class="text-sm text-gray-500">Última actualización: 05/03/2024</p>
+                  </div>
+                </div>
+                <a href="#" class="text-secondary hover:text-primary font-medium">Descargar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-display font-bold mb-4">Federación de Tiro</h3>
+            <p class="text-gray-400">Promoviendo la excelencia en el tiro deportivo desde 1950.</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+              <li><a href="noticias.html" class="text-gray-400 hover:text-white transition-colors">Noticias</a></li>
+              <li><a href="calendario.html" class="text-gray-400 hover:text-white transition-colors">Calendario</a></li>
+              <li><a href="contacto.html" class="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Contacto</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><i class="fas fa-phone mr-2"></i> +56 9 1234 5678</li>
+              <li><i class="fas fa-envelope mr-2"></i> contacto@federaciondetiro.cl</li>
+              <li><i class="fas fa-map-marker-alt mr-2"></i> Av. Principal 123, Santiago</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Síguenos</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 Federación de Tiro. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
