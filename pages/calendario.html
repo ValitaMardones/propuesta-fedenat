@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendario - Federación de Tiro</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <base href="./" />
     <script>
@@ -37,7 +36,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
-          <a href="/index.html" class="flex items-center">
+          <a href="../index.html" class="flex items-center">
             <img src="../assets/logo.png" alt="Logo" class="h-20 w-auto relative" />
             <span class="ml-2 text-white font-bold text-xl">Federación de Tiro</span>
           </a>
@@ -58,7 +57,7 @@
           <!-- Menú mobile -->
           <div
             id="mobile-menu"
-            class="fixed top-0 left-0 h-full w-64 bg-primary transform -translate-x-full transition-transform duration-300 z-40"
+            class="fixed top-0 left-0 w-64 h-screen bg-primary transform -translate-x-full transition-transform duration-300 z-40"
           >
             <div class="p-4 flex justify-between items-center border-b border-white">
               <span class="text-white font-bold text-lg">Menú</span>
@@ -68,7 +67,7 @@
                 </svg>
               </button>
             </div>
-            <nav class="flex flex-col p-4 space-y-4">
+            <nav class="flex flex-col p-4 space-y-4 bg-primary/95">
               <a href="../index.html" class="text-white hover:text-secondary text-sm font-medium">Inicio</a>
               <a href="noticias.html" class="text-white hover:text-secondary text-sm font-medium">Noticias</a>
               <a href="calendario.html" class="text-white hover:text-secondary text-sm font-medium">Calendario</a>
@@ -228,4 +227,5 @@
       </div>
     </footer>
   </body>
+  <script src="/js/main.js"></script>
 </html>
